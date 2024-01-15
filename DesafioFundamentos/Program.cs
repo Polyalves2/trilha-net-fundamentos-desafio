@@ -6,8 +6,11 @@ Console.OutputEncoding = System.Text.Encoding.UTF8;
 decimal precoInicial = 0;
 decimal precoPorHora = 0;
 
-Console.WriteLine("Seja bem vindo ao sistema de estacionamento!\n" +
-                  "Digite o preço inicial:");
+Console.Clear();
+
+Console.WriteLine("Seja bem-vindo ao estacionamento Valet Parking!\n");
+Console.WriteLine("Digite o preço inicial:");
+
 precoInicial = Convert.ToDecimal(Console.ReadLine());
 
 Console.WriteLine("Agora digite o preço por hora:");
@@ -23,6 +26,7 @@ bool exibirMenu = true;
 while (exibirMenu)
 {
     Console.Clear();
+    Console.WriteLine($"\n{"Valet Parking - Sistema de Estacionamento!".PadRight(70)} Data: {DateTime.Now.ToShortDateString()} | Hora: {DateTime.Now.ToString("HH:mm:ss")}\n");
     Console.WriteLine("Digite a sua opção:");
     Console.WriteLine("1 - Cadastrar veículo");
     Console.WriteLine("2 - Remover veículo");
@@ -58,4 +62,4 @@ while (exibirMenu)
     Console.ReadLine();
 }
 
-Console.WriteLine("O programa se encerrou");
+    Console.WriteLine("Sistema finalizado! Obrigado!");
